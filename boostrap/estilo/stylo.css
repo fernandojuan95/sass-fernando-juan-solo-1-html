@@ -1,0 +1,392 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.indice{
+    display:  flex;
+    justify-content: space-around;
+    padding: 120px 300px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100%;
+    height: 50%
+}
+.titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    background-image: linear-gradient(to top, rgb(79, 75, 111), rgb(203, 203, 146));
+}
+body{
+    background-color: bisque;
+}
+.parrafo{
+    background-image: linear-gradient(to left, rgb(84, 81, 84), rgb(186, 222, 186));
+    justify-content: right;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 50%;
+}
+/* footer */
+footer ul{
+    background-image: linear-gradient(rgb(160, 160, 160), rgb(77, 77, 123));
+    display: inline-flex;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    position: absolute;
+    top: 94%;
+    left: 0.5%;
+}
+.parrafo--footer{
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    background-image: linear-gradient(to top, rgb(71, 72, 72), white);
+    display: inline-block;
+}
+/* guitarra */
+.img--guitarras{
+    width: 1000px;
+    border: 1px;
+    display: flex;
+    position: absolute;
+    top: 15%
+}
+.titulo--guitarra{
+    background-image: linear-gradient(to right, red, yellow);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+.parrafo--guitarra{
+    background-image: linear-gradient(to left, rgb(84, 81, 84), rgb(186, 222, 186));
+    justify-content: right;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 50%;
+}
+.descripcion--guitarra{
+background-color: rgb(187, 141, 72);
+position: absolute;
+left: 70%;
+top: 25%;
+font-size: 15px;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+display: inline-block;
+overflow: hidden;
+color: black;
+border: crimson 1px;
+}
+/* bajo */
+.titulo--bajo{
+    background-image: linear-gradient(to right, red, yellow);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+.parrafo--bajo{
+    background-image: linear-gradient(to left, rgb(84, 81, 84), rgb(186, 222, 186));
+    justify-content: right;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 50%
+}
+.descripcion--bajo{
+    background-color: rgb(187, 141, 72);
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    overflow: hidden;
+    color: black;
+    border: crimson 1px;
+}
+.img--bajos{
+    width: 700px;
+    border: 1px;
+    display: flex;
+    position: absolute;
+    top: 15%
+}
+.footer--bajo{
+    display: block;
+    justify-content: baseline;
+}
+.body--bajo{
+    background-color: blanchedalmond;
+}
+/* bateria */
+.titulo--bateria{
+    background-image: linear-gradient(to right, red, yellow);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+.parrafo--bateria{
+    background-image: linear-gradient(to left, rgb(84, 81, 84), rgb(186, 222, 186));
+    justify-content: right;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 50%
+}
+.descripcion--bateria{
+    background-color: rgb(187, 141, 72);
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    overflow: hidden;
+    color: black;
+    border: crimson 1px;
+}
+.img--baterias{
+    width: 700px;
+    border: 1px;
+    display: flex;
+    position: absolute;
+    top: 15%
+}
+/* pedales */
+.titulo--pedales{
+    background-image: linear-gradient(to right, red, yellow);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 35px;
+}
+.parrafo--pedales{
+    background-image: linear-gradient(to left, rgb(84, 81, 84), rgb(186, 222, 186));
+    justify-content: right;
+    font-family: sans-serif;
+    font-size: 25px;
+    width: 50%
+}
+.img--pedales{
+    width: 1800px;
+    border: 1px;
+    display: flex;
+    position: absolute;
+    top: 15%
+}
+.descripcion--pedales{
+    background-color: rgb(187, 141, 72);
+    position: absolute;
+    left: 70%;
+    top: 25%;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    overflow: hidden;
+    color: black;
+    border: crimson 1px;
+}
+/* responsive */
+header{
+    grid-area: header;
+}
+.menu{
+    grid-area: menu;
+}
+.indice{
+    grid-area: indice;
+}
+.parrafo--footer{
+    grid-area: parrafo--footer;
+}
+footer{
+    grid-area: footer;
+}
+
+@media screen and (max-width:500px){
+    .media{
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+        "header header"
+        "menu menu"
+        "indice indice"
+        "parrafo--footer parrafo--footer"
+        "footer footer"
+        }
+        .indice{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        footer ul ;{
+            display: inline-block;
+            justify-content: flex-end;
+        }
+        .img--guitarras{
+            width: 250px;
+        }
+        .img--bajos{
+            width: 250px;
+        }
+        .img--baterias{
+            width: 250px;
+        }
+        .img--pedales{
+            width: 250px;
+        }
+        .parrafo--bajo{
+            width: 70px;
+        }
+        .parrafo--bateria{
+            width: 70px;
+        }
+        .parrafo--footer{
+            width: 70px;
+        }
+        .parrafo--guitarra{
+            width: 70px;
+        }
+        .descripcion--bajo{
+            width: 20px;
+        }
+        .descripcion--bateria{
+            width: 20px;
+        }
+        .descripcion--guitarra{
+            width: 20px;
+        }
+        .descripcion--pedales{
+            width: 20px;
+        }
+}
+@media screen and (max-width:700px){
+    .media{
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "menu menu menu"
+        "indice indice indice"
+        "parrafo--footer parrafo--footer parrafo--footer"
+        "footer footer footer"
+        }
+        .indice{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        footer ul{
+            display: inline-block;
+            justify-content: flex-end;
+        }
+        .img--guitarras{
+            width: 200px;
+        }
+        .img--bajos{
+            width: 250px;
+        }
+        .img--baterias{
+            width: 250px;
+        }
+        .img--pedales{
+            width: 250px;
+        }
+        .img--guitarras{
+            width: 250px;
+        }
+        .img--bajos{
+            width: 250px;
+        }
+        .img--baterias{
+            width: 250px;
+        }
+        .img--pedales{
+            width: 250px;
+        }
+        .parrafo--bajo{
+            width: 180px;
+        }
+        .parrafo--bateria{
+            width: 180px;
+        }
+        .parrafo--footer{
+            width: 180px;
+        }
+        .parrafo--guitarra{
+            width: 180px;
+        }
+        .descripcion--bajo{
+            width: 150px;
+        }
+        .descripcion--bateria{
+            width: 150px;
+        }
+        .descripcion--guitarra{
+            width: 150px;
+        }
+        .descripcion--pedales{
+            width: 150px;
+        }
+}
+@media screen and (max-width:900px){
+    .media{
+        grid-template-columns: 1fr 3fr 1fr 1fr;
+        grid-template-areas: 
+        "header header header header"
+        "menu menu menu menu"
+        "indice indice indice indice"
+        "parrafo--footer parrafo--footer parrafo--footer parrafo--footer"
+        "footer footer footer footer"
+        }
+        .indice{
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        footer ul{
+           display: inline-block;
+           justify-content: flex-end;
+        }
+        .img--guitarras{
+            width: 300px;
+        }
+        .img--bajos{
+            width: 300px;
+        }
+        .img--baterias{
+            width: 300px;
+        }
+        .img--pedales{
+            width: 300px;
+        }
+        .img--guitarras{
+            width: 250px;
+        }
+        .img--bajos{
+            width: 300px;
+        }
+        .img--baterias{
+            width: 300px;
+        }
+        .img--pedales{
+            width: 300px;
+        }
+        .parrafo--bajo{
+            width: 180px;
+        }
+        .parrafo--bateria{
+            width: 180px;
+        }
+        .parrafo--footer{
+            width: 180px;
+        }
+        .parrafo--guitarra{
+            width: 180px;
+        }
+        .descripcion--bajo{
+            width: 150px;
+        }
+        .descripcion--bateria{
+            width: 150px;
+        }
+        .descripcion--guitarra{
+            width: 150px;
+        }
+        .descripcion--pedales{
+            width: 150px;
+        }
+}
